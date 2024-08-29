@@ -15,3 +15,6 @@ A simple automatic screenshot app for Windows.
 
 ## Main Menu
 <img src="https://github.com/01101010110/AUTOSHOT/blob/main/Pictures/AUTOSHOT_main_menu.png?raw=true" alt="AUTOSHOT Main Menu" width="400" />
+
+## Backend
+Compiled using `pyinstaller --onefile --icon="AUTOSHOT_icon.ico" AUTOSHOT.py` in cmd.
