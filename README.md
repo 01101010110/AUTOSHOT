@@ -16,5 +16,14 @@ A simple automatic screenshot app for Windows.
 ## Main Menu
 <img src="https://github.com/01101010110/AUTOSHOT/blob/main/Pictures/AUTOSHOT_main_menu.png?raw=true" alt="AUTOSHOT Main Menu" width="400" />
 
+## Countdown Timer
+<img src="https://github.com/01101010110/AUTOSHOT/blob/main/Pictures/AUTOSHOT_countdown.png?raw=true" alt="Countdown Timer" width="200" />
+
+## F8 Paused
+<img src="https://github.com/01101010110/AUTOSHOT/blob/main/Pictures/AUTOSHOT_paused.png?raw=true" alt="Paused" width="200" />
+
+## Capturing
+<img src="https://github.com/01101010110/AUTOSHOT/blob/main/Pictures/AUTOSHOT_save_screenshots.png?raw=true" alt="Capturing" width="200" />
+
 ## Backend
 Compiled using `pyinstaller --onefile --icon="AUTOSHOT_icon.ico" AUTOSHOT.py` in cmd.
