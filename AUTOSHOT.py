@@ -1,9 +1,8 @@
 import os
-import time
-from datetime import datetime
 import pyautogui
 import keyboard
 import threading
+from datetime import datetime
 
 # Directory to save screenshots
 screenshots_folder = "screenshots"
@@ -23,17 +22,15 @@ def take_screenshot():
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
             filename = f"screenshot_{timestamp}.png"
             file_path = os.path.join(screenshots_folder, filename)
-            
             screenshot = pyautogui.screenshot()
             screenshot.save(file_path)
             print(f"Saved screenshot to {file_path}")
-        
-        time.sleep(interval)  # Wait for the specified interval
+        pyautogui.time.sleep(interval)  # Wait for the specified interval
 
-def countdown_timer():
-    for i in range(5, 0, -1):
+def countdown_timer(countdown_time):
+    for i in range(countdown_time, 0, -1):
         print(f"Starting in {i} seconds...", end='\r')
-        time.sleep(1)
+        pyautogui.time.sleep(1)
     print("Starting capture now!")
 
 def control():
@@ -42,16 +39,16 @@ def control():
         if keyboard.is_pressed('F8'):  # Pause/Resume
             paused = not paused
             print("Paused" if paused else "Resumed")
-            time.sleep(0.2)  # Debounce delay
+            pyautogui.time.sleep(0.2)  # Debounce delay
         if keyboard.is_pressed('F9'):  # Stop
             running = False
             print("Stopped")
-            time.sleep(0.2)  # Debounce delay
+            pyautogui.time.sleep(0.2)  # Debounce delay
 
 def main():
     global interval
     try:
-        # Display the program name
+        # Display the program name 
         print("\n")
         print(" ▄▄▄       █    ██ ▄▄▄█████▓ ▒█████    ██████  ██░ ██  ▒█████  ▄▄▄█████▓")
         print("▒████▄     ██  ▓██▒▓  ██▒ ▓▒▒██▒  ██▒▒██    ▒ ▓██░ ██▒▒██▒  ██▒▓  ██▒ ▓▒")
@@ -64,13 +61,19 @@ def main():
         print("      ░  ░   ░                  ░ ░        ░   ░  ░  ░    ░ ░           ")
         print("\n")
         
+        # Ask for interval and countdown without any delay
         interval = float(input("Enter the time between screenshots (in seconds, e.g., 0.5 for half a second): "))
         if interval <= 0:
             print("Interval must be greater than 0.")
             return
+        
+        countdown_time = int(input("How long would you like the countdown to be before starting the screenshots? (Enter a number of seconds): "))
+        if countdown_time < 0:
+            print("Countdown time cannot be negative.")
+            return
 
         # Countdown
-        countdown_timer()
+        countdown_timer(countdown_time)
 
         # Start the screenshot thread
         screenshot_thread = threading.Thread(target=take_screenshot)
