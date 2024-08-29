@@ -1,4 +1,3 @@
-# AUTOSHOT
 <img src="https://github.com/01101010110/AUTOSHOT/blob/main/Pictures/AUTOSHOT_icon.jpg?raw=true" alt="Screenshot App Icon" width="200" />
 A simple automatic screenshot app for Windows.
 
@@ -24,6 +23,10 @@ A simple automatic screenshot app for Windows.
 
 ## Capturing
 <img src="https://github.com/01101010110/AUTOSHOT/blob/main/Pictures/AUTOSHOT_save_screenshots.png?raw=true" alt="Capturing" width="200" />
+
+## Screenshots Folder
+<img src="https://github.com/01101010110/AUTOSHOT/blob/main/Pictures/AUTOSHOT_folder.png?raw=true" alt="Capturing" width="200" />
+<img src="https://github.com/01101010110/AUTOSHOT/blob/main/Pictures/AUTOSHOT_screenshots.png?raw=true" alt="Capturing" width="200" />
 
 ## Backend
 Compiled using `pyinstaller --onefile --icon="AUTOSHOT_icon.ico" AUTOSHOT.py` in cmd.
