@@ -30,3 +30,6 @@ A simple automatic screenshot app for Windows.
 
 ## Backend
 Compiled using `pyinstaller --onefile --icon="AUTOSHOT_icon.ico" AUTOSHOT.py` in cmd.
+
+## Annotate your data sets for ML 
+https://www.makesense.ai/
