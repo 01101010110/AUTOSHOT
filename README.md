@@ -8,7 +8,7 @@ A simple automatic screenshot app for Windows.
 - **Automatic Folder Creation**: 
   - Automatically creates a folder named `screenshots` or adds to an existing folder in the directory where the app is run.
 - **Visual Countdown**: 
-  - Before the screenshots begin, a 5 second countdown is displayed, giving you time to prepare. 
+  - You are able to select the number of seconds for your countdown, giving you time to prepare. 
 - **Pause and Stop Controls**:
   - Press `F8` to pause the screenshot capture.
   - Press `F9` to stop the app.
