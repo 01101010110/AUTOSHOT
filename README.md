@@ -32,4 +32,7 @@ A simple automatic screenshot app for Windows.
 Compiled using `pyinstaller --onefile --icon="AUTOSHOT_icon.ico" AUTOSHOT.py` in cmd.
 
 ## Annotate your data sets for ML 
+
+https://app.roboflow.com/
+`or`
 https://www.makesense.ai/
